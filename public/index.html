@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AstraQuant CryptoFX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+  <header class="mobile-header">
+    <a class="mobile-brand" href="#/home" aria-label="AstraQuant CryptoFX">
+      <span class="brand-mark mini"><span></span></span>
+      <span><strong>AstraQuant</strong><small>CryptoFX Signal Radar</small></span>
+    </a>
+    <button id="menu-toggle" class="menu-toggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <button class="sidebar-close" data-menu-close aria-label="Tutup menu">×</button>
+      <a class="brand" href="#/home" aria-label="AstraQuant CryptoFX">
+        <span class="brand-mark"><span></span></span>
+        <span><strong>AstraQuant</strong><small>CryptoFX Signal Radar</small></span>
+      </a>
+      <nav class="nav">
+        <a href="#/home" data-route="home">Home</a>
+        <a href="#/crypto" data-route="crypto">Crypto</a>
+        <a href="#/forex" data-route="forex">Forex</a>
+        <a href="#/insights" data-route="insights">Market Insight</a>
+      </nav>
+      <div class="side-card">
+        <span class="pulse"></span>
+        <div>
+          <strong>Live scanner aktif</strong>
+          <small>Signal berubah otomatis saat setup invalid atau target tercapai.</small>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">ASTRAQUANT CRYPTOFX</p>
+          <h1 id="page-title">Home</h1>
+          <p id="page-subtitle" class="subtitle">Crypto & Forex Signal Radar</p>
+        </div>
+        <div class="top-actions">
+          <span class="auto-chip">Auto Update</span>
+          <a class="btn primary" href="#/insights">Market Insight</a>
+        </div>
+      </header>
+
+      <section id="ticker" class="ticker"></section>
+      <section id="alert-box"></section>
+      <section id="app" class="content"></section>
+    </main>
+  </div>
+  <div class="menu-backdrop" data-menu-close></div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-bg" data-close></div>
+    <div class="modal-panel">
+      <button class="close" data-close>×</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

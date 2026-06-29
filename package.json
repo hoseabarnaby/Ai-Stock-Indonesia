@@ -1,0 +1,22 @@
+{
+  "name": "astraquant-cryptofx-v35-responsive-menu",
+  "version": "35.0.0",
+  "description": "AstraQuant CryptoFX with responsive hamburger navigation and stable signals",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "crypto",
+    "forex",
+    "signal",
+    "dashboard",
+    "coingecko",
+    "frankfurter"
+  ],
+  "license": "MIT"
+}
